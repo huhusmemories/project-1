@@ -20,3 +20,8 @@ resource "aws_iam_user" "users-aws" {
   for_each = toset(var.colleagues)
   name     = each.value
 }
+
+resource "aws_s3_bucket" "hs" {
+  bucket = "${var.bucket-name}-${count.index}"
+  count  = var.bucket-number
+}
