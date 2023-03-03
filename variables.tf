@@ -1,19 +1,24 @@
-# Variables for the user and trainer
+# Variables for the user and trainer - AZURE USERS
 variable "user1-hs" {
   default = {
-    email         = "huang.shewei@email.com"
-    name          = "Huang Shewei"
+    email          = "huang.shewei@email.com"
+    name           = "Huang Shewei"
     mail_nick_name = "huang.shewei"
-    pwd           = "qwerty"
+    pwd            = "qwerty"
   }
-
 }
 
 variable "ibrahimozbek" {
   default = {
-    email = "ibrahim.ozbekler@email.com"
-    name = "Ibrahim Ozbekler"
+    email          = "ibrahim.ozbekler@email.com"
+    name           = "Ibrahim Ozbekler"
     mail_nick_name = "ibrahim.ozbekler"
-    pwd = "qwerty"
+    pwd            = "qwerty"
   }
+}
+
+
+# Variable for users AWS
+variable "colleagues" {
+  default = ["MireilleDib", "RyanDeMos", "HeeSungShin", "JieyaoDeng"]
 }
