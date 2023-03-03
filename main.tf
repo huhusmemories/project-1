@@ -13,3 +13,10 @@ resource "azuread_user" "trainer" {
   password              = var.ibrahimozbek.pwd
   force_password_change = true
 }
+
+
+# Users AWS
+resource "aws_iam_user" "users-aws" {
+  for_each = toset(var.colleagues)
+  name     = each.value
+}
