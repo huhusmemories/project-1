@@ -22,3 +22,12 @@ variable "ibrahimozbek" {
 variable "colleagues" {
   default = ["MireilleDib", "RyanDeMos", "HeeSungShin", "JieyaoDeng"]
 }
+
+# Variable for buckets AWS
+variable "bucket-name" {
+  default = "hs-bucket-terraform-devops"
+}
+
+variable "bucket-number" {
+  default = 2
+}
